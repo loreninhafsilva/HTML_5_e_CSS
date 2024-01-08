@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family:'Nova';
+            src: url('fontes/Qakergu.otf') format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*Tipos de format()
+        - opentype(otf)
+        - truetype(ttf)
+        - embedded-opentype
+        - truetype-aat(Apple Advanced Typography)
+        - svg        
+        */
+
+        body {
+            font: normal 16px Arial, Verdana, serif;
+            text-align: left;
+        }
+        h1{
+            font-family: 'Nova', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-align: center;
+        }
+        h2{
+            text-align: left;
+        }
+        #justify{
+            text-align: justify;
+        }
+        #right{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Tipos de Alinhamento</h2>
+    <p id="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex a reiciendis perspiciatis error possimus eum veritatis maxime ut earum quae quidem mollitia quo aperiam consequuntur accusamus delectus eos, tempora sed.</p>
+    <p id="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquam ratione assumenda dolore dolor labore, voluptates quia debitis voluptas tenetur porro. Error quo delectus officiis pariatur, magni vel alias placeat!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae alias error vero sunt aliquam corporis perspiciatis placeat ratione deserunt provident ab reiciendis libero architecto, enim dignissimos. Optio, repudiandae? Ipsam!</p>
+</body>
+</html>
