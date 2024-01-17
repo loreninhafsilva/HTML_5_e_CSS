@@ -18,16 +18,31 @@
             text-align: center;
         }
         thead,tfoot{
-            background-color: burlywood;
+            background-color: lightcoral;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: lightcoral;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -43,10 +58,106 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 610 361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7 056 495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 775 805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>3 974 687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 941 613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 833 712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 658 649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 302 729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 272 199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 127 683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2 817 381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 757 013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 209 558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 581 196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 511 460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>830 018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>733 759</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>636 707</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>0000000000000</strong></td>
             </tr>
         </tfoot>
